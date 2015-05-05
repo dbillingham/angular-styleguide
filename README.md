@@ -288,7 +288,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ## Controllers
 
-### controllerAs View Syntax
+~~### controllerAs View Syntax
 ###### [Style [Y030](#style-y030)]
 
   - Use the [`controllerAs`](http://www.johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/) syntax over the `classic controller with $scope` syntax.
@@ -339,7 +339,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
       this.sendMessage = function() { };
   }
   ```
-
+~~
 ### controllerAs with vm
 ###### [Style [Y032](#style-y032)]
 
