@@ -1994,6 +1994,24 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
     function logger() { }
     ```
 
+### Non Generic Factory Names
+###### [Style [Y125-A](#style-y125-A)]
+
+  - Append 'Service' to factory name when creating none globally needed factories.
+
+    ```javascript
+    /**
+     * recommended
+     */
+
+    // book.service.js
+    angular
+        .module
+        .factory('bookService', bookService);
+
+    function bookService() { }
+    ```
+
 ### Directive Component Names
 ###### [Style [Y126](#style-y126)]
 
