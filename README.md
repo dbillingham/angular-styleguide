@@ -288,16 +288,16 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 
 ## Controllers
 
-~~### controllerAs View Syntax
-###### [Style [Y030](#style-y030)]
+### ~~controllerAs View Syntax~~
+###### ~~[Style [Y030](#style-y030)]~~
 
-  - Use the [`controllerAs`](http://www.johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/) syntax over the `classic controller with $scope` syntax.
+  - ~~Use the [`controllerAs`](http://www.johnpapa.net/do-you-like-your-angular-controllers-with-or-without-sugar/) syntax over the `classic controller with $scope` syntax.~~
 
-  *Why?*: Controllers are constructed, "newed" up, and provide a single new instance, and the `controllerAs` syntax is closer to that of a JavaScript constructor than the `classic $scope syntax`.
+  ~~*Why?*: Controllers are constructed, "newed" up, and provide a single new instance, and the `controllerAs` syntax is closer to that of a JavaScript constructor than the `classic $scope syntax`.~~
 
-  *Why?*: It promotes the use of binding to a "dotted" object in the View (e.g. `customer.name` instead of `name`), which is more contextual, easier to read, and avoids any reference issues that may occur without "dotting".
+  ~~*Why?*: It promotes the use of binding to a "dotted" object in the View (e.g. `customer.name` instead of `name`), which is more contextual, easier to read, and avoids any reference issues that may occur without "dotting".~~
 
-  *Why?*: Helps avoid using `$parent` calls in Views with nested controllers.
+  ~~*Why?*: Helps avoid using `$parent` calls in Views with nested controllers.~~
 
   ```html
   <!-- avoid -->
@@ -313,16 +313,16 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   </div>
   ```
 
-### controllerAs Controller Syntax
-###### [Style [Y031](#style-y031)]
+### ~~controllerAs Controller Syntax~~
+###### ~~[Style [Y031](#style-y031)]~~
 
-  - Use the `controllerAs` syntax over the `classic controller with $scope` syntax.
+  - ~~Use the `controllerAs` syntax over the `classic controller with $scope` syntax.~~
 
-  - The `controllerAs` syntax uses `this` inside controllers which gets bound to `$scope`
+  - ~~The `controllerAs` syntax uses `this` inside controllers which gets bound to `$scope`~~
 
-  *Why?*: `controllerAs` is syntactic sugar over `$scope`. You can still bind to the View and still access `$scope` methods.
+  ~~*Why?*: `controllerAs` is syntactic sugar over `$scope`. You can still bind to the View and still access `$scope` methods.~~
 
-  *Why?*: Helps avoid the temptation of using `$scope` methods inside a controller when it may otherwise be better to avoid them or move them to a factory. Consider using `$scope` in a factory, or if in a controller just when needed. For example when publishing and subscribing events using [`$emit`](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$emit), [`$broadcast`](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$broadcast), or [`$on`](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$on) consider moving these uses to a factory and invoke from the controller.
+  ~~*Why?*: Helps avoid the temptation of using `$scope` methods inside a controller when it may otherwise be better to avoid them or move them to a factory. Consider using `$scope` in a factory, or if in a controller just when needed. For example when publishing and subscribing events using [`$emit`](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$emit), [`$broadcast`](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$broadcast), or [`$on`](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$on) consider moving these uses to a factory and invoke from the controller.~~
 
   ```javascript
   /* avoid */
@@ -339,7 +339,7 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
       this.sendMessage = function() { };
   }
   ```
-~~
+
 ### controllerAs with vm
 ###### [Style [Y032](#style-y032)]
 
