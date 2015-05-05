@@ -1994,10 +1994,10 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
     function logger() { }
     ```
 
-### Non Generic Factory Names
+### Local Factory Names
 ###### [Style [Y125-A](#style-y125-A)]
 
-  - Append 'Service' to factory name when creating none globally needed factories.
+  - Append 'Service' to factory name when creating local factories tied to a specific domain, rather than used globally.
 
     ```javascript
     /**
